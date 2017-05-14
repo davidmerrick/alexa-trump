@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 7.9.0
+before_script:
+- mkdir conf
+- cp ci/lambda-config.js conf
+- npm install -g gulp
+- npm install
+script: gulp deploy
+sudo: false
+notifications:
+  slack:
+    secure: ScT552WIf9a4vaQspJn9hW9CB+U7s5j3t2DUSYYltOz0bZMHLQwXVxUh8QugUMUx5EvUGuRSxS1kmy2+5gAVBBRaNkER2uHv/GfbFT9davE7MUicKNbcl+ac/yxj19iXjpCZxHIjfKBjbO4InUnOHn0iOQVhOe2UJe/g7aUXdbH0faP9OIgKN2NkvwjOa27B6t2AWEQ+gAGG0XQsgX7wMKBNknv6lpVa8E6zIDEHK71d9zSLk31TOPs9e6ZjdNpySVtgcKEzh4VboG0nuxQAjCWtiPIbsoemn4rG92YC+nZF2g6JDHO42CkZTFYsLyi5fsxJ81AbN/H+cehhbPd7kVvWjdDEGHcAvdlad3EaHm48kA7AHw5oIwA7DMgPOdaF0qVjy77iJLFMEB0JqYpvEj0SqNYn4+TQMyNhH/tNhNtwbRC8gcJkldqho3o8GRKLSCf0hKjmirPDzUOPhidUHB7CB9OC9tPl22ljIbSKXEK80ku1v1DpSfHMa8k8zognGjb48zrMhfbfHZFltsRRCkZY+NDzTqnsLunwVBpvgPAJBPnQ1wajSypN6+m1s3ZlNu4EnnIhk08XPqg2QrK9Y9ahJBam8Q+5XyXiTOrap2S2/ocB88p7VGUfG7Y4FNC/aBu7m3nZKNZI6PwKYxsoi3yo6h0qBLWTaynlPc4adCo=
