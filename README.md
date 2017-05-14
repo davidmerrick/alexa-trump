@@ -1,4 +1,6 @@
-Alexa that plays back random quotes from Donald Trump.
+[![Build Status](https://travis-ci.org/davidmerrick/alexa-trump.svg?branch=master)](https://travis-ci.org/davidmerrick/alexa-trump)
+
+Alexa skill that plays back random quotes from Donald Trump.
 
 Quotes are served as MP3s from an S3 bucket.
 
