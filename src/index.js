@@ -14,7 +14,10 @@ function getHelpResponse(){
         "about Michael Flynn",
         "how to solve the Israeli Palestinian conflict",
         "how to bake cookies",
-        "what his favorite color is"
+        "what his favorite color is",
+        "why the sky is blue",
+        "how he's doing",
+        "about the weather"
     ];
 
     let randomIndex = Math.floor((Math.random() * examples.length));
